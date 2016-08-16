@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void mergeArrays(int *first_array,int *second_array);
+void mergeArrays(int *first_array, int *second_array);
 int main()
 {
 
