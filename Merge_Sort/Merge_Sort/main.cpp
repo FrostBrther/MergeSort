@@ -17,5 +17,5 @@ void mergeArrays(int *first_array, int *second_array)
 
 void divide(int *array)
 {
-	//this function will wivide array to two subarrays
+	//this function will divide array to two subarrays
 }
