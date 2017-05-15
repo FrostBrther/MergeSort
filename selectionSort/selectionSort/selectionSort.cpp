@@ -2,7 +2,7 @@
 
 // ======================= selection sort funtion ========================
 template < typename T >
-void selection_sort(T *const arr, const int n);
+void selection_sort(T *const arr, const int size);
 
 // =========== find position of the smalles element in array =============
 template < typename T >
@@ -21,11 +21,11 @@ int main()
 }
 
 template < typename T >
-void selection_sort(T *const arr, const int n)
+void selection_sort(T *const arr, const int size)
 {
-	for (int i = 0; i < n - 1; i++)
+	for (int i = 0; i < size - 1; i++)
 	{
-		int min_pos = find_min_pos(arr, i, n);
+		int min_pos = find_min_pos(arr, i, size);
 		swap_elements(arr[min_pos], arr[i]);
 	}
 }
