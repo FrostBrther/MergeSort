@@ -1,11 +1,18 @@
-// Selection sort 
-#include <iostream>
+// Selection sort implementation
+
+// ====================== main selection sort funtion ====================
 template < typename T >
 void selection_sort(T *const arr, const int n);
+
+// ============= find minimal position element in the array ==============
 template < typename T >
 int find_min_pos(T *const arr, const int &_begin, const int &_end);
+
+// ==================== swap values of two elements ======================
 template < typename T >
 void swap_elements(const T &a, const T &b);
+
+// ======================= the MAIN function =============================
 int main()
 {
 	const int n = 5;
@@ -26,6 +33,7 @@ void selection_sort(T *const arr, const int n)
 template < typename T >
 int find_min_pos(T *const arr, const int &_begin, const int &_end)
 {
+	// find position of the smallest element in array between _begin and _end range
 	T min = arr[_begin];
 	int min_pos = _begin;
 	for (int i = _begin; i < _end; i++)
