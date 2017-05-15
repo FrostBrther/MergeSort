@@ -37,13 +37,12 @@ int find_min_pos(T *const arr, const int &_begin, const int &_end)
 	T min = arr[_begin];
 	int min_pos = _begin;
 	for (int i = _begin; i < _end; i++)
-	{
 		if (arr[i] < min)
 		{
 			min = arr[i];
 			min_pos = i;
 		}
-	}
+
 	return min_pos;
 }
 
