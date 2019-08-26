@@ -1,1 +1,19 @@
+#Selection sorting algorithm on python 3.0 + 
+#using function find_smallest element in list
+def find_smallest(list):
+    smallest = list[0]
+    smallest_index = 0
+    for i in range(1, len(list)):
+        if list[i] < smallest:
+            smallest = list[i]
+            smallest_index = i
+    return smallest_index
 
+#Sorting function retirns sorted list
+def selection_sort(list):
+    newList = []
+    for i in range(0, len(list)):
+        smallest = find_smallest(list)
+        newList.append(list.pop(smallest))
+
+    return newList
