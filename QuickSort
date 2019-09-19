@@ -1,0 +1,11 @@
+#Merge sort on Python 3.0+
+import random
+def quicksort(list):
+    if len(list) < 2:
+        return list
+    else:
+        j = random.randint(0,len(list)-1)
+        pivot = list[j]
+        less = [i for i in list if i < pivot]
+        greater = [i for i in list if i > pivot]
+        return quicksort(less) + [pivot] + quicksort(greater)
