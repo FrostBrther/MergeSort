@@ -1,4 +1,4 @@
-#Merge sort on Python 3.0+
+#Quick sort on Python 3.0+
 import random
 def quicksort(list):
     if len(list) < 2:
